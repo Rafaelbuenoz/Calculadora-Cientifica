@@ -1,0 +1,10 @@
+node_modules/
+target/
+dist/
+artifacts/
+.dart_tool/
+.env
+.env.*
+.dev.vars*
+*.log
+__pycache__/

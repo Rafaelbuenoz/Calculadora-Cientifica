@@ -1,0 +1,19 @@
+/* Personal portfolio palette. Only the Dart and Java demonstrations use this sheet. */
+@font-face{font-family:'DM Sans';src:url('./fonts/dm-sans-latin.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+:root,:root[data-theme=light]{--bg:#F4F1EA;--surface:#FCFAF6;--soft:#E7ECE9;--fg:#151B24;--muted:#52677D;--accent:#22675E;--line:#CED5D6;--outline:#6D7D89;--lime:#22675E;--danger:#9E282B;--danger-bg:#FBE8DF;color-scheme:light}
+:root[data-theme=dark]{--bg:#151B24;--surface:#1D2632;--soft:#253240;--fg:#F4F1EA;--muted:#B3C0CE;--accent:#7DD3C7;--line:#394858;--outline:#72879A;--lime:#22675E;--danger:#FFB6B2;--danger-bg:#462D29;color-scheme:dark}
+body{font-family:'DM Sans',Arial,sans-serif}
+.app-heading h1{font:700 clamp(29px,4.5vw,42px)/1.13 'DM Sans',Arial,sans-serif;letter-spacing:-.04em}
+.history-heading h2{font:700 27px/1.2 'DM Sans',Arial,sans-serif;letter-spacing:-.03em}
+.calculator-card,.history-panel,.summary,.form-disclosure,.load-error,.confirmation{border-radius:4px}
+.calculator-card,.history-panel{border-color:var(--line)}
+.calculator-top>div,.scientific-keys button,.number-keys button,.copy-button,.button,input,select,textarea{border-radius:3px}
+.scientific-keys button,.number-keys button,#calculator-form,.calculator-top>div{border-color:var(--outline)}
+.number-keys .key-equals,.button-primary{background:#7DD3C7;color:#151B24;border-color:#7DD3C7}
+.number-keys .key-equals:hover,.button-primary:hover{background:#A1E0D7;color:#151B24;border-color:#A1E0D7}
+.scientific-keys button[aria-pressed=true]{background:var(--accent);color:var(--bg)}
+#expression::placeholder{font-family:'DM Sans',Arial,sans-serif}
+html{overflow-x:clip}
+.calculator-app,.inventory-app{width:100%;max-width:1200px;min-width:0}
+@media(max-width:650px){.app-heading h1{font-size:30px}.app-language{font-size:11px}.calculator-app{padding:16px}.inventory-app{padding:20px 16px}.calculator-card,.history-panel{padding:18px}input,select,textarea{font-size:16px}}
+@media(max-width:380px){.app-heading h1{font-size:27px}.app-heading{gap:12px}.calculator-app{padding:12px}.calculator-card,.history-panel{padding:14px}.app-language{padding:5px 8px;font-size:10px}.memory-bar{align-items:flex-start;flex-wrap:wrap;gap:6px}.memory-bar>div{margin-left:auto}}

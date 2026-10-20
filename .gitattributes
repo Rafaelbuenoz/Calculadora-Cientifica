@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.woff binary
+*.woff2 binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.zip binary
+*.jar binary
+# Preserve upstream license bytes, including their original line endings.
+web/fonts/OFL-*.txt -text
